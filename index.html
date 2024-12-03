@@ -13,12 +13,22 @@
     </script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-    <meta name="theme-color" content="#2196F3">
+    <meta name="theme-color" content="#c697a8">
     <title>Maddy Leveck</title>
+
+    <script>
+        class Year extends HTMLElement{
+            connectedCallback(){
+                this.innerHTML = new Date().getFullYear();
+            }
+        }
+        customElements.define("x-year", Year);
+    </script>
 
     <!-- CSS  -->
     <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
-    <link href="min/custom-min.css" type="text/css" rel="stylesheet">
+    <!--<link href="min/custom-min.css" type="text/css" rel="stylesheet">-->
+    <link href="css/style.css" type="text/css" rel="stylesheet"
 </head>
 
 <body id="top" class="scrollspy">
@@ -41,6 +51,7 @@
                         <a href="#" id="logo-container" class="brand-logo">Maddy Leveck</a>
                         <ul class="right hide-on-med-and-down">
                             <li><a href="#work">Work</a></li>
+                            <li><a href="About Me.html">About Me</a></li>
                             <li><a href="#contact">Contact</a></li>
                             <li><a href="https://github.com/joashp/material-design-template"
                                     target="_blank">Download</a></li>
@@ -105,7 +116,7 @@
                             <div class="card-reveal">
                                 <span class="card-title grey-text text-darken-4">Project Title <i
                                         class="mdi-navigation-close right"></i></span>
-                                <p>Marketing material for an upcoming Christmas Festival </p>
+                                <p>Marketing material for an upcoming Christmas Festival. </p>
                             </div>
                         </div>
                     </div>
@@ -206,6 +217,7 @@
                     class="white-text" href="http://materializecss.com/">materializecss</a>
             </div>
         </div>
+            &copy; Maddy Leveck <x-year></x-year>
     </footer>
 
 

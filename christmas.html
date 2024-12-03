@@ -1,0 +1,56 @@
+<head>
+    <script>
+        class Year extends HTMLElement{
+            connectedCallback(){
+                this.innerHTML = new Date().getFullYear();
+            }
+        }
+        customElements.define("x-year", Year);
+    </script>
+</head>
+
+<style>
+    header{
+        font-family:Arial, Helvetica, sans-serif;
+        background-color: #9dc183;
+            }
+    body{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background-color: lightcoral;
+    }
+    footer{
+        background-color: antiquewhite;
+    }
+</style>
+
+<header>
+    <h1>Graphic Design Project</h1>
+    <h3>Course</h3>
+    <p>Graphic Design Studio, UX211</p>
+    <h3>Project Outline</h3>
+    <p>Create marketing for an upcoming Christmas Festival</p>
+    <h3>We had to include the following information</h3>
+    <ul>
+        <li>Festival Name</li>
+        <li>Time and Date</li>
+        <li>Slogan or further information</li>
+    </ul>
+</header>
+<body>
+    <h3>Posters</h3>
+    <img class="activator" src="Posters.png" 
+            width="600"
+            height="400">
+     <h3>Sticker</h3>
+        <img class="activator" src="Sticker.png" 
+        width="300"
+        height="400">
+    <h3>Instagram Posts</h3>
+        <img class="activator" src="Instagram.png" 
+        width="800"
+        height="400">
+</body>
+
+<footer>
+    &copy; Maddy Leveck <x-year></x-year>
+</footer>

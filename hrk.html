@@ -1,0 +1,57 @@
+<head>
+    <script>
+        class Year extends HTMLElement{
+            connectedCallback(){
+                this.innerHTML = new Date().getFullYear();
+            }
+        }
+        customElements.define("x-year", Year);
+    </script>
+</head>
+<style>
+    header{
+        font-family:Arial, Helvetica, sans-serif;
+        background-color: rgb(255, 231, 231);
+            }
+    body{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #cb1111;
+    }
+    footer{
+        background-color: antiquewhite;
+    }
+</style>
+<header>
+    <h1>Maker Lab Project</h1>
+    <h3>Course</h3>
+    <p>Maker Lab I, UX201</p>
+    <h3>Project Outline</h3>
+    <p>Within a group, create a 3D design that addresses a social issue of concern. </p> 
+    <h3>Group Members</h3>
+    <ul>
+        <li>Omar Malik</li>
+        <li><b><i>Maddy Leveck</i></b></li>
+        <li>Marwah Sultan</li>
+        <li>Jess Yasny</li>
+    </ul>
+</header>
+<body>
+    <h2>Project Overview</h2>
+    <p>The goal of our project was to create a Harm Reduction Kit. This small, portable, kit includes practical and educational resources to reduce the harm of drugs and minimize overdoses.
+        Our kit includes tools like narcan, fentanyl testers, rubbing alcohol, and needle disposal. 
+        Within this kit, there is a QR code that connects you to an app which includes further first aid training and educational resrouces. 
+    </p>
+    <h2>Social Issue of Concern</h2>
+    <p>This product <i>reduces harm</i> by providing accessible information and destigmatizing drug use. It includes easy to understand resources and prioritizes health over shame.</p>
+    <h2>Our Physical Prototype</h2>
+        <img class="activator" src="Physical.png" 
+        width="1200"
+        height="400">
+    <h2>Our Digital Prototype</h2>
+    <img class="activator" src="Digital.png" 
+    width="1200"
+    height="500">
+</body>
+<footer>
+    &copy; Maddy Leveck <x-year></x-year>
+</footer>

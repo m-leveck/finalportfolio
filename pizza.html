@@ -1,0 +1,56 @@
+<head>
+    <script>
+        class Year extends HTMLElement{
+            connectedCallback(){
+                this.innerHTML = new Date().getFullYear();
+            }
+        }
+        customElements.define("x-year", Year);
+    </script>
+</head>
+<style>
+    header{
+        font-family:Arial, Helvetica, sans-serif;
+        background-color:#c94317;
+            }
+    body{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #e9e9e6;
+    }
+    footer{
+        background-color: antiquewhite;
+    }
+</style>
+<header>
+    <h1>Box Project</h1>
+    <h3>Course</h3>
+    <p>Maker Lab I, UX201</p>
+    <h3>Project Outline</h3>
+    <p>Within a group, take a regular box and innovate it to create an accessible design.</p> 
+    <h3>Group Members</h3>
+    <ul>
+        <li>Omar Malik</li>
+        <li><b><i>Maddy Leveck</i></b></li>
+        <li>Marwah Sultan</li>
+        <li>Jess Yasny</li>
+    </ul>
+</header>
+<body>
+    <h2>Project Overview</h2>
+    <p>We redesigned the classic pizza box to enhance usability and cater to all users. </p>
+    <h2>Added Features</h2>
+        <ul>
+            <li>Made with recyclable materials</li>
+            <li>Handlebars and pull out drawer make it easy for traveling </li>
+            <li>Thermal insulation ensures ideal temperature and freshness</li>
+            <li>Braille and large text</li>
+        </ul>
+    <p></p>
+    <h2>Our Prototype</h2>
+        <img class="activator" src="pprototype.png" 
+        width="1200"
+        height="400">
+</body>
+<footer>
+    &copy; Maddy Leveck <x-year></x-year>
+</footer>
