@@ -1,3 +1,13 @@
+<head>
+    <script>
+        class Year extends HTMLElement{
+            connectedCallback(){
+                this.innerHTML = new Date().getFullYear();
+            }
+        }
+        customElements.define("x-year", Year);
+    </script>
+</head>
 <style>
     header{
         font-family:Georgia, 'Times New Roman', Times, serif;
@@ -37,3 +47,6 @@
         width="900"
         height="400">
 </body>
+<footer>
+    &copy; Maddy Leveck <x-year></x-year>
+</footer>
